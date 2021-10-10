@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>SPORT SOCIAL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!--   CSS  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="css/css2.css" />
+
+  <!--   JS   -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+  <script type="text/javascript">
+
+    function selected1() {
+      document.getElementById("tile1").style.backgroundColor = "#006400"
+      document.getElementById("tile-img1").style.borderColor = "#006400"
+      document.getElementById("tile2").style.backgroundColor = "black"
+      document.getElementById("tile-img2").style.borderColor = "black"
+    }
+
+    function selected2() {
+      document.getElementById("tile2").style.backgroundColor = "#006400"
+      document.getElementById("tile-img2").style.borderColor = "#006400"
+      document.getElementById("tile1").style.backgroundColor = "black"
+      document.getElementById("tile-img1").style.borderColor = "black"
+    }
+  </script>
+</head>
+
+<body>
+  <!-- header-->
+  <div class="container container-a mobi-mt-0">
+    <header id="masthead" class="mobi-hide">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header p-24">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div class="d-flex">
+            <a href="#">
+              <img src="images/SS logos-03.jpg" id="logo" alt="Loading..." class="logo" /> </a><br />
+
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href="trainer-signup.html"><button type="button" class="btn btn-default btn-arrow-right active">
+                      Select Trainer Type
+                    </button></a>
+                </li>
+                <li>
+                  <a href="trainer-location.html"><button type="button" class="btn btn-default btn-arrow-right">
+                      Trainer Location
+                    </button></a>
+                </li>
+                <li>
+                  <a href="trainer-location.html"><button type="button" class="btn btn-default btn-arrow-right">
+                      Trainer's Information
+                    </button></a>
+                </li>
+                <li>
+                  <a href="trainer-plan-levels.html"><button type="button" class="btn btn-default btn-arrow-right">
+                      Plan Levels
+                    </button></a>
+                </li>
+                <!-- <li>
+                  <a href="classes-info.html"><button type="button" class="btn btn-default btn-arrow-right">
+                      Add Classes/ Lessons
+                    </button></a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+
+          <br />
+
+          <div class="prog-bar">
+            <div class="col-sm-3 msg">Complete your profile</div>
+            <div class="col-sm-8">
+              <div class="progress progress-100">
+                <div class="progress-bar progress-bar-20" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                  aria-valuemax="20">
+                  20%
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-1 msg2">20%</div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+  </div>
+
+  <!-------------   end of header ------->
+
+  <!-- START OF CONTAINER ONE-->
+  <div class="padding-sm mobi-hide"></div>
+  <div class="padding-sn mobi-hide"></div>
+  <img src="images/sslogo.png" alt="logo" class="sslogo hidden_" />
+  <div class="container-float w-70">
+    <div class="padding-sm"></div>
+    <div class="d-flex flex-wrap mt-26 w-90 m-auto">
+      <div class="col-sm-6 signUpTxt border-radius-top m-auto">
+        <hr class="w-90" />
+        <div class="color-green">
+          <div class="padding-sn mobi-hide"></div>
+          <h2>
+            <strong>Create a free marketing page for your sport or fitness training services!
+            </strong>
+          </h2>
+          <h2>
+            <strong>Add online bookings for your classes or appointments
+            </strong>
+          </h2>
+          <div class="padding-sn mobi-hide"></div>
+        </div>
+        <hr class="w-90" />
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5">
+        <h2 class="text-center"><strong>First indicate what type of trainer are you? </strong></h4>
+          <div class="text-center">
+            <div class="d-flex">
+              <a href="trainers-sports-trainer-location.html" class="tranchor" onclick="selected1();">
+                <h6 class="tile-header tranchor" id="tile1">SPORTS TRAINER</h6>
+                <img src="images/trainer-icon-6.jpg" alt="trainer..." class="trainer-img" id="tile-img1" />
+              </a>
+              <div class="seperator"></div>
+              <a href="trainer-location.html" class="col-sm-offset-1" onclick="selected2();">
+                <h6 class="tile-header" id="tile2">FITNESS TRAINER</h6>
+                <img src="images/coach-icon-png-11.jpg" alt="trainer..." class="trainer-img" id="tile-img2" />
+              </a>
+            </div>
+
+            <div class="font-20">
+              Select One of The Above
+            </div>
+
+
+            <div class="row align-items-center justify-content-center mobi-hide">
+              <a href="trainer-location.html" class="col btn btn-success the_green w-100 center-block next-text">
+                NEXT
+              </a>
+            </div>
+
+            <div class="row align-items-center justify-content-center hidden_">
+              <a href="#" class="col btn btn-success the_green w-100 center-block next-text" data-toggle="modal"
+                data-target="#myModal">
+                NEXT
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="padding-sm"></div>
+    <div class="mobi-hide">
+      <!-- <h4 class="rown text-center">
+        <strong>You must first have a personal Sport Socail account to be able to create a free Trainer Account
+        </strong>
+      </h4> -->
+      <div class="border-1px w-90 m-auto font-16 weight-500 p-2">
+        <div class="padding-sn"></div>
+        <p class="text-center font-20">
+          <strong>Notices</strong>
+        </p>
+        <div class="padding-sn"></div>
+        <p class="font-20">
+          <strong>#1 </strong>
+          To list your sport or fitness training services you don’t need to list a physical location but you must list
+          your city and service radius.
+        </p>
+        <p class="font-20">
+          <strong>#2 </strong>
+          If you are an employed trainer at gym, golf course or ski resort for example you
+          can still list your services here for free but please ask your Manager to list your physical location on our
+          other page Sport Places. It is also free to list on Sport Places.
+        </p>
+        <p class="font-20">
+          <strong>#3 </strong>
+          If you offer online only training you can list
+          your services here but you must indicate your city and country location.
+        </p>
+      </div>
+      <div class="padding-sm"></div>
+      <div class="padding-sm"></div>
+    </div>
+  </div>
+  <!-- END OF CONTAINER ONE-->
+  <div class="padding-sm"></div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center"><strong>Notices</strong></h4>
+        </div>
+        <div class="border-1px  m-auto font-16 weight-500 ps-24">
+          <div class="padding-sm"></div>
+          <p>
+            <strong>#1 </strong>
+            To list your sport or fitness training services you don’t need to list a physical location but you must
+            list
+            your city and service radius.
+          </p>
+          <p>
+            <strong>#2 </strong>
+            If you are an employed trainer at gym, golf course or ski resort for example you
+            can still list your services here for free but please ask your Manager to list your physical location on
+            our
+            other page Sport Places. It is also free to list on Sport Places.
+          </p>
+          <p>
+            <strong>#3 </strong>
+            If you offer online only training you can list
+            your services here but you must indicate your city and country location.
+          </p>
+          <div class="padding-sn"></div>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+          <a href="trainer-location.html" class="btn btn-default br-25 float-right">Close</a>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

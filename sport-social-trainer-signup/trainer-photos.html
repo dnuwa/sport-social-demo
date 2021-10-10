@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>SPORT SOCIAL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!--   CSS  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="css/css2.css" />
+
+  <!--   JS   -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+
+<body>
+  <!-- header-->
+  <div class="container container-a">
+    <header id="masthead">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header p-24">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- mobile progress bar -->
+          <div class="mobi-prog-bar">
+            <a href="#">
+              <img src="images/SS logos-03.jpg" id="logo" alt="Loading..." class="logo" /> </a>
+            <div class="prog-bar">
+              <div class="col-sm-3 msg">Complete your profile</div>
+              <div class="col-sm-6">
+
+                <div class="progress progress-100">
+                  <div class="progress-bar progress-bar-40" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                    aria-valuemax="40">40% </div>
+                </div>
+
+              </div>
+              <div class="col-sm-1">40%</div>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <a href="#" class="mobi-hide">
+              <img src="images/SS logos-03.jpg" id="logo" alt="Loading..." class="logo" /> </a><br />
+
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href="trainer-signup.html"><button type="button" class="btn btn-default btn-arrow-right">
+                      Select Trainer Type
+                    </button></a>
+                </li>
+                <li>
+                  <a href="trainer-location.html"><button type="button" class="btn btn-default btn-arrow-right">
+                      Trainer's Location
+                    </button></a>
+                </li>
+                <li>
+                  <a href="trainer-location.html"><button type="button" class="btn btn-default btn-arrow-right active">
+                      Trainer's Information
+                    </button></a>
+                </li>
+                <li>
+                  <a href="trainer-plan-levels.html"><button type="button" class="btn btn-default btn-arrow-right">
+                      Plan Levels
+                    </button></a>
+                </li>
+                <!-- <li>
+                  <a href="classes-info.html"><button type="button" class="btn btn-default btn-arrow-right">
+                      Add Classes/ Lessons
+                    </button></a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- <br /> -->
+
+          <div class="prog-bar mobi-hide">
+            <div class="col-sm-3 msg">Complete your profile</div>
+            <div class="col-sm-8">
+
+              <div class="progress progress-100">
+                <div class="progress-bar progress-bar-40" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                  aria-valuemax="40">40% </div>
+              </div>
+
+            </div>
+            <div class="col-sm-1 msg2">40%</div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+  </div>
+
+  <!-------------   end of header ------->
+
+  <!-- START OF CONTAINER ONE-->
+  <div class="padding-sn"></div>
+  <!-- <div class="container form-horizontal"> -->
+
+  <!-- <div class="ugl-border"> -->
+
+  <div class="container mobi-m-tp-90">
+    <div class="padding-sn"></div>
+    <h3 class="text-center h3-font-mobi m-0">
+      <strong>Photo Suggestions to Add to Your Training Page</strong>
+    </h3>
+    <div class="padding-sn"></div>
+  </div>
+
+  <div class="padding-sn"></div>
+
+  <div class="container p-0">
+    <div class="padding-sn"></div>
+    <div class="padding-sn"></div>
+    <div class="col-sm-5">
+      <div>
+        <div class="col-sm-4 mobi-mb-24 text-center">
+          <div class="pb-2">
+            <div class="control-label header-wrapper">Featured Photo of Yourself Training</div>
+            <img src="images/user-placeholder-1.png" class="border-media" width="100">
+          </div>
+          <div>
+            <input type="file" id="selectedFile" style="display: none;"
+              onchange="document.getElementsByTagName('p')[0].innerHTML=this.value;" />
+            <input type="button" value="Browse..." onclick="document.getElementById('selectedFile').click();" />
+            <div>No file chosen</div>
+          </div>
+        </div>
+        <div class="col-sm-4 mobi-mb-24 text-center">
+          <div class="pb-2">
+            <div class="control-label header-wrapper">Photo of You Training Clients</div>
+            <img src="images/user-placeholder-1.png" class="border-media" width="100">
+          </div>
+          <div>
+            <input type="file" id="selectedFile" style="display: none;"
+              onchange="document.getElementsByTagName('p')[0].innerHTML=this.value;" />
+            <input type="button" value="Browse..." onclick="document.getElementById('selectedFile').click();" />
+            <div>No file chosen</div>
+          </div>
+        </div>
+        <div class="col-sm-4 mobi-mb-24 text-center">
+          <div class="pb-2">
+            <div class="control-label header-wrapper">Photo of You Training Clients</div>
+            <img src="images/user-placeholder-1.png" class="border-media" width="100">
+          </div>
+          <div>
+            <input type="file" id="selectedFile" style="display: none;"
+              onchange="document.getElementsByTagName('p')[0].innerHTML=this.value;" />
+            <input type="button" value="Browse..." onclick="document.getElementById('selectedFile').click();" />
+            <div>No file chosen</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 mt-16">
+        <label class="col-sm-8 m-auto">Add more photos of me training</label>
+        <div class="col-sm-4">
+          <div>
+            <input type="file" id="selectedFile" style="display: none;"
+              onchange="document.getElementsByTagName('p')[0].innerHTML=this.value;" />
+            <input type="button" value="Browse..." onclick="document.getElementById('selectedFile').click();" />
+            <div>No file chosen</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-7 border-left">
+      <div>
+        <div class="col-sm-3 mobi-mb-24 text-center">
+          <div class="pb-2">
+            <div class="control-label header-wrapper">Photo of your training place</div>
+            <img src="images/thumbnail.png" class="border-media" width="100">
+          </div>
+          <div>
+            <input type="file" id="selectedFile" style="display: none;"
+              onchange="document.getElementsByTagName('p')[0].innerHTML=this.value;" />
+            <input type="button" value="Browse..." onclick="document.getElementById('selectedFile').click();" />
+            <div>No file chosen</div>
+          </div>
+        </div>
+        <div class="col-sm-3 mobi-mb-24 text-center">
+          <div class="pb-2">
+            <div class="control-label header-wrapper">Photo of Your training equipment</div>
+            <img src="images/thumbnail.png" class="border-media" width="100">
+          </div>
+          <div>
+            <input type="file" id="selectedFile" style="display: none;"
+              onchange="document.getElementsByTagName('p')[0].innerHTML=this.value;" />
+            <input type="button" value="Browse..." onclick="document.getElementById('selectedFile').click();" />
+            <div>No file chosen</div>
+          </div>
+        </div>
+        <div class="col-sm-3 mobi-mb-24 text-center">
+          <div class="pb-2">
+            <div class="control-label header-wrapper">Photo of Your training area</div>
+            <img src="images/thumbnail.png" class="border-media" width="100">
+          </div>
+          <div>
+            <input type="file" id="selectedFile" style="display: none;"
+              onchange="document.getElementsByTagName('p')[0].innerHTML=this.value;" />
+            <input type="button" value="Browse..." onclick="document.getElementById('selectedFile').click();" />
+            <div>No file chosen</div>
+          </div>
+        </div>
+        <div class="col-sm-3 mobi-mb-24 text-center">
+          <div class="pb-2">
+            <div class="control-label header-wrapper">Photo of a favorite memory</div>
+            <img src="images/thumbnail.png" class="border-media" width="100">
+          </div>
+          <div>
+            <input type="file" id="selectedFile" style="display: none;"
+              onchange="document.getElementsByTagName('p')[0].innerHTML=this.value;" />
+            <input type="button" value="Browse..." onclick="document.getElementById('selectedFile').click();" />
+            <div>No file chosen</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 mt-16">
+        <label class="col-sm-9 m-auto">Add more photos of training location, space & equipment</label>
+        <div class="col-sm-3">
+          <div>
+            <input type="file" id="selectedFile" style="display: none;"
+              onchange="document.getElementsByTagName('p')[0].innerHTML=this.value;" />
+            <input type="button" value="Browse..." onclick="document.getElementById('selectedFile').click();" />
+            <div>No file chosen</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="clear"></div>
+    <div class="padding-sn"></div>
+  </div>
+  <div class="padding-sn"></div>
+  <div class="container p-0">
+    <div class="padding-sn"></div>
+    <p class="col-sm-12">
+      <strong>Notice:</strong> You need to add your featured photo of you training to be able to launch your page. You
+      can update
+      this photo later and add the rest of these photo suggestions later when you have found the best ones to post
+    </p>
+    <div class="padding-sm"></div>
+    <div class="row">
+      <div class="form-group text-center btn-ugl-border m-auto d-flex">
+        <a href="trainer-monthly-operations.html" class="btn dark w-50 button4 mr-0">Back</a>
+        <a href="trainer-videos.html" class="btn btn-success w-50 button4  m-0">Next</a>
+      </div>
+    </div>
+    <div class="padding-sn"></div>
+  </div>
+
+  <div class="padding-sn"></div>
+
+  </div>
+  <!-- END OF CONTAINER ONE-->
+  <div class="padding-sm"></div>
+</body>
+
+</html>
